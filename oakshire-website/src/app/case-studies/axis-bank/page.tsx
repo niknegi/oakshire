@@ -3,7 +3,7 @@ import { ArrowLeft, CheckCircle2, Quote } from "lucide-react";
 import { Button } from "~/components/ui/button";
 
 export const metadata = {
-  title: "Axis Bank Case Study | Oakshire Labs",
+  title: "Fintech Bank Case Study | Oakshire Labs",
   description:
     "AI-Powered Digital Lending Platform - Transforming Gold Loan Processing with End-to-End Automation. ₹12,000+ Crores processed.",
 };
@@ -27,7 +27,7 @@ export default function AxisBankCaseStudy() {
               Banking & Financial Services • 18 months
             </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-6">
-              Axis Bank: AI-Powered Digital Lending Platform
+              Fintech Bank: AI-Powered Digital Lending Platform
             </h1>
             <p className="text-xl text-stone-300">
               Transforming Gold Loan Processing with End-to-End Automation
@@ -44,7 +44,7 @@ export default function AxisBankCaseStudy() {
               Executive Summary
             </h2>
             <p className="text-stone-700 text-lg leading-relaxed mb-8">
-              Axis Bank, serving over 100 million customers across India, needed
+              Fintech Bank, serving over 100 million customers across India, needed
               to modernize their gold loan processing system to compete with
               fintech disruptors and meet growing customer demand for instant
               loan approvals. The traditional process involved manual paperwork,
@@ -81,7 +81,7 @@ export default function AxisBankCaseStudy() {
                   key={stat.label}
                   className="bg-white p-6 rounded-xl border border-stone-200"
                 >
-                  <p className="text-3xl font-bold text-[#5c6b56] mb-2">
+                  <p className="text-3xl font-bold text-primary mb-2">
                     {stat.value}
                   </p>
                   <p className="text-stone-600">{stat.label}</p>
@@ -138,7 +138,7 @@ export default function AxisBankCaseStudy() {
                       key={item}
                       className="flex items-start gap-3 text-stone-700"
                     >
-                      <CheckCircle2 className="h-5 w-5 text-[#5c6b56] mt-0.5 shrink-0" />
+                      <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -217,7 +217,7 @@ export default function AxisBankCaseStudy() {
               <p className="font-semibold text-lg">
                 Head of Branch Banking & Gold Loans
               </p>
-              <p className="text-[#7a8a74]">Axis Bank</p>
+              <p className="text-[#7a8a74]">Fintech Bank</p>
               <p className="text-stone-500">Fortune 500 Bank</p>
             </div>
           </div>
@@ -237,7 +237,7 @@ export default function AxisBankCaseStudy() {
           <Button
             asChild
             size="lg"
-            className="bg-[#5c6b56] hover:bg-[#4a5744] text-white"
+            className="bg-primary hover:bg-primaryHover text-white"
           >
             <Link href="/contact">Schedule a Consultation</Link>
           </Button>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "~/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "~/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetHeader, SheetTitle, SheetDescription } from "~/components/ui/sheet";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -18,7 +18,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-stone-200 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-stone-200 bg-background backdrop-blur supports-[backdrop-filter]:bg-background/70">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
@@ -34,7 +34,7 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-stone-600 transition-colors hover:text-stone-900"
+              className="text-sm font-medium text-stone-700 transition-colors hover:text-stone-900"
             >
               {link.label}
             </Link>
@@ -45,7 +45,7 @@ export function Navbar() {
         <div className="hidden md:block">
           <Button
             asChild
-            className="bg-[#5c6b56] hover:bg-[#4a5744] text-white"
+            className="bg-primary hover:bg-primaryHover text-white"
           >
             <Link href="/contact">Get Started</Link>
           </Button>
@@ -59,7 +59,13 @@ export function Navbar() {
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-[300px] bg-stone-50">
+          <SheetContent side="right" className="p-4 w-75 bg-stone-50">
+            <SheetHeader className="hidden">
+              <SheetTitle>Oakshire</SheetTitle>
+              <SheetDescription>
+                Menu
+              </SheetDescription>
+           </SheetHeader>
             <div className="flex flex-col gap-6 mt-8">
               {navLinks.map((link) => (
                 <SheetClose asChild key={link.href}>
@@ -75,7 +81,7 @@ export function Navbar() {
               <SheetClose asChild>
                 <Button
                   asChild
-                  className="mt-4 w-full bg-[#5c6b56] hover:bg-[#4a5744] text-white"
+                  className="mt-4 w-full bg-primary hover:bg-primaryHover text-white"
                 >
                   <Link href="/contact">Get Started</Link>
                 </Button>

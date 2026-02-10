@@ -46,8 +46,8 @@ export function WhyChooseUsSection() {
               key={reason.title}
               className="text-center p-8 rounded-xl border border-stone-100 hover:border-[#5c6b56]/20 hover:shadow-lg transition-all duration-300"
             >
-              <div className="w-16 h-16 rounded-full bg-[#5c6b56]/10 flex items-center justify-center mx-auto mb-6">
-                <reason.icon className="h-8 w-8 text-[#5c6b56]" />
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                <reason.icon className="h-8 w-8 text-primary" />
               </div>
 
               <h3 className="text-xl font-semibold text-stone-900 mb-4">
@@ -56,7 +56,7 @@ export function WhyChooseUsSection() {
 
               <p className="text-stone-600 mb-4">{reason.description}</p>
 
-              <p className="text-sm font-medium text-[#5c6b56]">
+              <p className="text-sm font-medium text-primary">
                 {reason.highlight}
               </p>
             </div>

@@ -4,7 +4,7 @@ const stats = [
   {
     value: "₹12,000+",
     unit: "Crores",
-    label: "Processed through our AI lending platform for Axis Bank",
+    label: "Processed through our AI lending platform for Fintech Bank",
     metric: "87% faster loan approvals",
   },
   {
@@ -48,12 +48,12 @@ export function StatsSection() {
               className="bg-white rounded-xl p-8 shadow-sm border border-stone-200 hover:shadow-md transition-shadow"
             >
               <div className="mb-4">
-                <span className="text-4xl sm:text-4xl font-bold text-[#5c6b56]">
+                <span className="text-4xl sm:text-4xl font-bold text-primary">
                   {stat.value}
                 </span>
                 <br/>
                 {stat.unit ? (
-                  <span className="text-2xl font-semibold text-[#5c6b56]/80 ml-1">
+                  <span className="text-2xl font-semibold text-primary/80 ml-1">
                     {stat.unit}
                   </span>
                 ): <span className="p-3"></span>}

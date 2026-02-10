@@ -23,7 +23,7 @@ const footerLinks = {
 };
 
 const trustedClients = [
-  "Axis Bank (Fortune 500)",
+  "Fintech Bank (Fortune 500)",
   "Cordelia Cruises",
   "Fincent (USA)",
   "Emcode (UAE)",

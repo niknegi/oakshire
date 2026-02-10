@@ -7,7 +7,7 @@ const testimonials = [
     quote:
       "This platform has redefined how we think about digital lending. The combination of seamless UX, AI-powered decision making, and robust risk management has given us a competitive edge. During Diwali season, when demand spikes 5x, the system handled the load flawlessly. The fraud detection alone has saved us over ₹45 Crores.",
     author: "Head of Branch Banking & Gold Loans",
-    company: "Axis Bank",
+    company: "Fintech Bank",
     role: "Fortune 500 Bank",
   },
   {

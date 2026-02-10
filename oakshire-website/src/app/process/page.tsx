@@ -92,7 +92,7 @@ export default function ProcessPage() {
   return (
     <div className="min-h-screen bg-stone-50">
       {/* Hero Header */}
-      <section className="bg-[#5c6b56] text-white py-20">
+      <section className="bg-primary text-white py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-semibold mb-6">
@@ -123,7 +123,7 @@ export default function ProcessPage() {
 
                   {/* Icon & Number */}
                   <div className="md:col-span-2 flex md:flex-col items-center md:items-start gap-4">
-                    <div className="w-14 h-14 rounded-full bg-[#5c6b56] flex items-center justify-center shrink-0">
+                    <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center shrink-0">
                       <phase.icon className="h-6 w-6 text-white" />
                     </div>
                     <span className="text-3xl font-bold text-stone-200">
@@ -137,7 +137,7 @@ export default function ProcessPage() {
                       <h2 className="text-2xl font-semibold text-stone-900">
                         {phase.title}
                       </h2>
-                      <span className="text-sm font-medium text-[#5c6b56] bg-[#5c6b56]/10 px-3 py-1 rounded-full">
+                      <span className="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
                         {phase.phase}
                       </span>
                     </div>
@@ -155,7 +155,7 @@ export default function ProcessPage() {
                             key={item}
                             className="flex items-center gap-2 text-stone-700"
                           >
-                            <CheckCircle2 className="h-4 w-4 text-[#5c6b56] shrink-0" />
+                            <CheckCircle2 className="h-4 w-4 text-primary shrink-0" />
                             {item}
                           </li>
                         ))}
@@ -246,7 +246,7 @@ export default function ProcessPage() {
                 },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4">
-                  <CheckCircle2 className="h-6 w-6 text-[#5c6b56] shrink-0" />
+                  <CheckCircle2 className="h-6 w-6 text-primary shrink-0" />
                   <div>
                     <h3 className="font-semibold text-stone-900 mb-1">
                       {item.title}
@@ -261,7 +261,7 @@ export default function ProcessPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[#5c6b56]">
+      <section className="py-20 bg-primary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-semibold text-white mb-6">
             Ready to start your project?
@@ -273,7 +273,7 @@ export default function ProcessPage() {
           <Button
             asChild
             size="lg"
-            className="bg-white text-[#5c6b56] hover:bg-stone-100 font-medium px-10"
+            className="bg-white text-primary hover:bg-stone-100 font-medium px-10"
           >
             <Link href="/contact">
               Schedule a Consultation

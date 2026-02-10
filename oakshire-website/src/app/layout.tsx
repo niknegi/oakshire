@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Enterprise Software Development & AI/ML Solutions",
     description:
-      "Trusted by Axis Bank, Cordelia Cruises, and leading fintech companies.",
+      "Trusted by Fintech Bank, Cordelia Cruises, and leading fintech companies.",
     type: "website",
   },
   icons: [{ rel: "icon", url: "/favicon.ico" }],

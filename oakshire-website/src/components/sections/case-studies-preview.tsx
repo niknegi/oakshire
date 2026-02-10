@@ -7,7 +7,7 @@ import { Button } from "~/components/ui/button";
 
 const caseStudies = [
   {
-    title: "Axis Bank: AI-Powered Gold Loan Platform",
+    title: "Fintech Bank: AI-Powered Gold Loan Platform",
     description:
       "Transformed gold loan processing from 48-hour manual process to 30-minute automated system with AI fraud detection.",
     challenge:
@@ -121,7 +121,7 @@ export function CaseStudiesPreviewSection() {
                             key={impact}
                             className="flex items-start gap-2 text-sm text-stone-700"
                           >
-                            <CheckCircle2 className="h-4 w-4 text-[#5c6b56] mt-0.5 shrink-0" />
+                            <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 shrink-0" />
                             {impact}
                           </li>
                         ))}
@@ -130,7 +130,7 @@ export function CaseStudiesPreviewSection() {
 
                     <Link
                       href={caseStudy.link}
-                      className="inline-flex items-center font-medium text-[#5c6b56] hover:text-[#4a5744] transition-colors"
+                      className="inline-flex items-center font-medium text-primary hover:text-[#4a5744] transition-colors"
                     >
                       Read Full Case Study
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -146,7 +146,7 @@ export function CaseStudiesPreviewSection() {
           <Button
             asChild
             size="lg"
-            className="bg-[#5c6b56] hover:bg-[#4a5744] text-white"
+            className="bg-primary hover:bg-primaryHover text-white"
           >
             <Link href="/case-studies">
               View All Case Studies

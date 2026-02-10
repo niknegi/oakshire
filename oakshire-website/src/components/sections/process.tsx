@@ -58,7 +58,7 @@ export function ProcessSection() {
               <div className="bg-stone-50 rounded-xl p-6 border border-stone-100 h-full">
                 {/* Icon & Phase */}
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-[#5c6b56] flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center">
                     <step.icon className="h-6 w-6 text-white" />
                   </div>
                   <span className="text-sm font-medium text-stone-500">

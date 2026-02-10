@@ -45,7 +45,7 @@ oakshire-website/
    - CTA section
 
 2. **Case Studies** (`/case-studies`) - Case studies list with 4 projects:
-   - Axis Bank - AI-Powered Digital Lending Platform
+   - Fintech Bank - AI-Powered Digital Lending Platform
    - Cordelia Cruises - Premium Booking Engine
    - Fincent - AI Accounting SaaS
    - Emcode - Vehicle Tracking & AI Analytics
