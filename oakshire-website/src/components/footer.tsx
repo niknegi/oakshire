@@ -23,7 +23,7 @@ const footerLinks = {
 };
 
 const trustedClients = [
-  "Fintech Bank (Fortune 500)",
+  "Fintech Banks",
   "Cordelia Cruises",
   "Fincent (USA)",
   "Emcode (UAE)",
@@ -31,7 +31,7 @@ const trustedClients = [
 
 export function Footer() {
   return (
-    <footer className="bg-stone-900 text-stone-300">
+    <footer className="bg-primary text-stone-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Company Info */}
@@ -50,12 +50,12 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm">
                 <Mail className="h-4 w-4 text-stone-500" />
-                <span>hello@oakshirelabs.com</span>
+                <span>nikhil.negi7991@gmail.com</span>
               </div>
-              <div className="flex items-center gap-3 text-sm">
+              {/* <div className="flex items-center gap-3 text-sm">
                 <Phone className="h-4 w-4 text-stone-500" />
                 <span>+91-XXXX-XXXXXX</span>
-              </div>
+              </div> */}
               <div className="flex items-center gap-3 text-sm">
                 <MapPin className="h-4 w-4 text-stone-500" />
                 <span>India | Serving US, Europe & Beyond</span>
@@ -110,7 +110,7 @@ export function Footer() {
           </div>
         </div>
 
-        <Separator className="my-10 bg-stone-800" />
+        <Separator className="my-10 bg-stone-200" />
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">

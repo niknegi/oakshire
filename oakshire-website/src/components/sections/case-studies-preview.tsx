@@ -4,6 +4,8 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Card, CardContent } from "~/components/ui/card";
 import { Button } from "~/components/ui/button";
+import Image from "next/image";
+import config from "next.config";
 
 const caseStudies = [
   {
@@ -22,6 +24,7 @@ const caseStudies = [
     ],
     link: "/case-studies/axis-bank",
     color: "bg-gradient-to-br from-stone-800 to-stone-900",
+    image: `${config.assetPrefix}assets/images/fintech.jpg`
   },
   {
     title: "Cordelia Cruises: Premium Booking Engine",
@@ -39,6 +42,7 @@ const caseStudies = [
     ],
     link: "/case-studies/cordelia-cruises",
     color: "bg-gradient-to-br from-[#5c6b56] to-[#3d4a38]",
+    image: `${config.assetPrefix}assets/images/cruise.jpg`
   },
   {
     title: "Fincent: AI Accounting SaaS (USA)",
@@ -56,6 +60,7 @@ const caseStudies = [
     ],
     link: "/case-studies/fincent",
     color: "bg-gradient-to-br from-stone-700 to-stone-800",
+    image: `${config.assetPrefix}assets/images/saas.jpg`
   },
 ];
 
@@ -82,8 +87,14 @@ export function CaseStudiesPreviewSection() {
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 {/* Image/Visual Side */}
                 <div
-                  className={`${caseStudy.color} p-8 lg:p-12 flex flex-col justify-center min-h-[300px]`}
+                  className={`bg-background p-8 lg:p-12 flex flex-col justify-center min-h-[300px] relative`}
                 >
+                  <Image
+                    src={caseStudy.image}
+                    alt={caseStudy.title}
+                    fill
+                    className="object-cover z-9"
+                  />
                   <div className="text-white">
                     <h3 className="text-2xl sm:text-3xl font-semibold mb-4">
                       {caseStudy.title}
@@ -98,28 +109,28 @@ export function CaseStudiesPreviewSection() {
                 <CardContent className="p-8 lg:p-12">
                   <div className="space-y-6">
                     <div>
-                      <h4 className="text-sm font-semibold text-stone-500 uppercase tracking-wider mb-2">
+                      <h4 className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">
                         Challenge
                       </h4>
                       <p className="text-stone-700">{caseStudy.challenge}</p>
                     </div>
 
                     <div>
-                      <h4 className="text-sm font-semibold text-stone-500 uppercase tracking-wider mb-2">
+                      <h4 className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">
                         Solution
                       </h4>
                       <p className="text-stone-700">{caseStudy.solution}</p>
                     </div>
 
                     <div>
-                      <h4 className="text-sm font-semibold text-stone-500 uppercase tracking-wider mb-3">
+                      <h4 className="text-sm font-semibold text-primary uppercase tracking-wider mb-3">
                         Impact
                       </h4>
                       <ul className="space-y-2">
                         {caseStudy.impacts.map((impact) => (
                           <li
                             key={impact}
-                            className="flex items-start gap-2 text-sm text-stone-700"
+                            className="flex items-start gap-2 text-sm text-primary"
                           >
                             <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 shrink-0" />
                             {impact}

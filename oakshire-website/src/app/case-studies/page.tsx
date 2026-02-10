@@ -2,6 +2,8 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "~/components/ui/button";
 import { Card, CardContent } from "~/components/ui/card";
+import Image from "next/image";
+import config from "next.config";
 
 const caseStudies = [
   {
@@ -21,6 +23,7 @@ const caseStudies = [
     industry: "Banking & Finance",
     duration: "18 months",
     color: "bg-gradient-to-br from-stone-800 to-stone-900",
+    image: `${config.assetPrefix}assets/images/fintech.jpg`
   },
   {
     slug: "cordelia-cruises",
@@ -39,6 +42,7 @@ const caseStudies = [
     industry: "Travel & Hospitality",
     duration: "14 months",
     color: "bg-gradient-to-br from-[#5c6b56] to-[#3d4a38]",
+    image: `${config.assetPrefix}assets/images/cruise.jpg`
   },
   {
     slug: "fincent",
@@ -57,6 +61,7 @@ const caseStudies = [
     industry: "FinTech SaaS",
     duration: "24+ months",
     color: "bg-gradient-to-br from-stone-700 to-stone-800",
+    image: `${config.assetPrefix}assets/images/saas.jpg`
   },
   {
     slug: "emcode",
@@ -75,6 +80,7 @@ const caseStudies = [
     industry: "Logistics & IoT",
     duration: "12 months",
     color: "bg-gradient-to-br from-stone-600 to-stone-700",
+    image: `${config.assetPrefix}assets/images/logistics.jpg`
   },
 ];
 
@@ -88,13 +94,20 @@ export default function CaseStudiesPage() {
   return (
     <div className="min-h-screen bg-stone-50">
       {/* Hero Header */}
-      <section className="bg-primary text-white py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-primary text-white py-20 relative">
+         <Image 
+            src={`${config.assetPrefix}assets/images/study.jpg`}
+            alt="Case study background"
+            fill
+            className=" object-cover z-10 "
+          />
+          <div className="absolute top-0 h-full w-full z-10 bg-white" style={{opacity:'80%'}}></div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl font-semibold mb-6">
+            <h1 className="text-4xl sm:text-5xl font-semibold mb-6 text-stone-900  drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
               Case Studies
             </h1>
-            <p className="text-xl text-stone-200">
+            <p className="text-xl text-stone-700">
               Proven track record in building mission-critical systems for
               Fortune 500 banks, cruise lines, and fintech innovators.
             </p>
@@ -114,19 +127,26 @@ export default function CaseStudiesPage() {
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                   {/* Visual Side */}
                   <div
-                    className={`${caseStudy.color} p-8 lg:p-12 flex flex-col justify-center min-h-[280px]`}
+                    className={`${caseStudy.color} p-8 lg:p-12 flex flex-col justify-center min-h-[280px] relative`}
                   >
-                    <div className="text-white">
-                      <p className="text-white/70 text-sm uppercase tracking-wider mb-2">
+                    <Image
+                      src={caseStudy.image}
+                      alt={caseStudy.title}
+                      fill
+                      className="object-cover z-10"
+                    />
+                    <div className="absolute top-0 left-0 h-full w-full z-10 bg-white" style={{opacity:'40%'}}></div>
+                    <div className=" z-10">
+                      <p className="text-sm uppercase tracking-wider mb-2 text-stone-600 drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
                         {caseStudy.industry} • {caseStudy.duration}
                       </p>
-                      <h2 className="text-2xl sm:text-3xl font-semibold mb-2">
+                      <h2 className="text-2xl sm:text-3xl font-semibold mb-2 text-stone-900 drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
                         {caseStudy.client}
                       </h2>
-                      <h3 className="text-xl text-white/90 mb-4">
+                      <h3 className="text-x mb-4 text-stone-800 drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
                         {caseStudy.title}
                       </h3>
-                      <p className="text-white/80">{caseStudy.subtitle}</p>
+                      <p className="text-stone-600">{caseStudy.subtitle}</p>
                     </div>
                   </div>
 

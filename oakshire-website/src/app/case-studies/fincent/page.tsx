@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { ArrowLeft, CheckCircle2, Quote } from "lucide-react";
 import { Button } from "~/components/ui/button";
+import Image from "next/image";
+import config from "next.config";
 
 export const metadata = {
   title: "Fincent Case Study | Oakshire Labs",
@@ -12,24 +14,31 @@ export default function FincentCaseStudy() {
   return (
     <div className="min-h-screen bg-stone-50">
       {/* Header */}
-      <section className="bg-gradient-to-br from-stone-700 to-stone-800 text-white py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-br from-stone-800 to-stone-900 text-white py-20 relative">
+          <Image 
+            src={`${config.assetPrefix}assets/images/saas.jpg`}
+            alt="Fintech bank background"
+            fill
+            className="object-cover z-10"
+          />
+            <div className="absolute top-0 h-full w-full z-10 bg-white" style={{opacity:'40%'}}></div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10 relative ">
           <Link
             href="/case-studies"
-            className="inline-flex items-center text-stone-300 hover:text-white mb-8 transition-colors"
+            className="inline-flex items-center text-stone-400 hover:text-stone-900 mb-8 transition-colors "
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to Case Studies
           </Link>
 
           <div className="max-w-4xl">
-            <p className="text-stone-300 text-sm uppercase tracking-wider mb-4">
+            <p className="text-stone-500 text-sm uppercase tracking-wider mb-4">
               FinTech SaaS • 24+ months
             </p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-6 text-stone-900">
               Fincent: AI-Powered Financial SaaS
             </h1>
-            <p className="text-xl text-stone-200">
+            <p className="text-xl text-stone-900">
               Automating Bookkeeping for Small Businesses with Machine Learning
             </p>
           </div>
@@ -201,7 +210,7 @@ export default function FincentCaseStudy() {
       </section>
 
       {/* Testimonial */}
-      <section className="py-16 bg-stone-900 text-white">
+      <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <Quote className="h-12 w-12 text-[#7a8a74] mx-auto mb-8" />

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { ArrowLeft, CheckCircle2, Quote } from "lucide-react";
 import { Button } from "~/components/ui/button";
+import Image from "next/image";
+import config from "next.config";
 
 export const metadata = {
   title: "Cordelia Cruises Case Study | Oakshire Labs",
@@ -12,24 +14,31 @@ export default function CordeliaCaseStudy() {
   return (
     <div className="min-h-screen bg-stone-50">
       {/* Header */}
-      <section className="bg-gradient-to-br from-[#5c6b56] to-[#3d4a38] text-white py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-br from-[#5c6b56] to-[#3d4a38] text-white py-20 relative">
+         <Image 
+          src={`${config.assetPrefix}assets/images/cruise.jpg`}
+          alt="Fintech bank background"
+          fill
+          className="object-cover z-10"
+        />
+          <div className="absolute top-0 h-full w-full z-10 bg-white" style={{opacity:'40%'}}></div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <Link
             href="/case-studies"
-            className="inline-flex items-center text-stone-200 hover:text-white mb-8 transition-colors"
+            className="inline-flex items-center text-stone-500 hover:text-stone-900 mb-8 transition-colors"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to Case Studies
           </Link>
 
           <div className="max-w-4xl">
-            <p className="text-stone-200 text-sm uppercase tracking-wider mb-4">
+            <p className="text-stone-700 text-sm uppercase tracking-wider mb-4">
               Travel & Hospitality • 14 months
             </p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-6 text-stone-900">
               Cordelia Cruises: Premium Booking Engine
             </h1>
-            <p className="text-xl text-stone-100">
+            <p className="text-xl text-stone-900">
               India's First Premium Cruise Line - Powering Luxury Travel at Scale
             </p>
           </div>
@@ -200,10 +209,10 @@ export default function CordeliaCaseStudy() {
       </section>
 
       {/* Testimonial */}
-      <section className="py-16 bg-stone-900 text-white">
+      <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <Quote className="h-12 w-12 text-[#7a8a74] mx-auto mb-8" />
+            <Quote className="h-12 w-12 text-brand-light mx-auto mb-8" />
             <blockquote className="text-xl sm:text-2xl leading-relaxed mb-8">
               "Launching India's first premium cruise line required a technology
               partner who could innovate without precedent. The team built a
@@ -217,8 +226,8 @@ export default function CordeliaCaseStudy() {
             </blockquote>
             <div>
               <p className="font-semibold text-lg">President & CEO</p>
-              <p className="text-[#7a8a74]">Cordelia Cruises</p>
-              <p className="text-stone-500">India's First Premium Cruise Line</p>
+              <p className="text-stone-400">Cordelia Cruises</p>
+              <p className="text-stone-100">India's First Premium Cruise Line</p>
             </div>
           </div>
         </div>

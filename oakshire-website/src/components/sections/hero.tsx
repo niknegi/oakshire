@@ -3,9 +3,10 @@
 import Link from "next/link";
 import { Button } from "~/components/ui/button";
 import { ArrowRight, Building2, Ship, Wallet, Car } from "lucide-react";
+import config from "next.config";
 
 const trustedClients = [
-  { name: "Fintech Bank", icon: Building2, type: "Fortune 500" },
+  { name: "Fintech Banks", icon: Building2, type: "Fortune 500" },
   { name: "Cordelia Cruises", icon: Ship, type: "Travel" },
   { name: "Fincent", icon: Wallet, type: "US-Based" },
   { name: "Emcode", icon: Car, type: "UAE" },
@@ -20,7 +21,7 @@ export function HeroSection() {
         muted
         loop
         playsInline
-        poster="/assets/images/hero.jpg"
+        poster={`${config.assetPrefix}/assets/images/hero.jpg`}
         className="absolute inset-0 w-full h-full object-cover"
       >
         <source src="/assets/videos/hero.mp4" type="video/mp4" />

@@ -48,20 +48,20 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-stone-900 mb-1">Email</h3>
-                    <p className="text-stone-600">hello@oakshirelabs.com</p>
+                    <p className="text-stone-600">nikhil.negi7991@gmail.com</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
+                {/* <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                     <Phone className="h-5 w-5 text-primary" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-stone-900 mb-1">Phone</h3>
-                    <p className="text-stone-600">+91-XXXX-XXXXXX</p>
+                    <p className="text-stone-600">+91-8892314340</p>
                     <p className="text-stone-500 text-sm">+1-XXX-XXX-XXXX (US)</p>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">

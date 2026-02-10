@@ -34,7 +34,7 @@ const phases = [
   {
     icon: Code,
     number: "03",
-    phase: "Week 7-N",
+    phase: "Week 7+",
     title: "Agile Development",
     description:
       "We work in 2-week sprints with regular demos. Our continuous integration and testing ensure quality at every step. You'll have direct access to our team via Slack and regular video calls.",
