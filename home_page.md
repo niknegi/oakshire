@@ -22,7 +22,7 @@ From intelligent lending platforms processing ₹12,000+ Crores to booking engin
 [View Our Work] [Schedule a Consultation]
 
 ### Trust Badges (Below CTA):
-🏦 Axis Bank (Fortune 500) | 🚢 Cordelia Cruises | 💰 Fincent (US-Based) | 🚗 Emcode UAE
+🏦 Fintech Bank (Fortune 500) | 🚢 Cordelia Cruises | 💰 Fincent (US-Based) | 🚗 Emcode UAE
 
 ---
 
@@ -34,7 +34,7 @@ From intelligent lending platforms processing ₹12,000+ Crores to booking engin
 ### Stat Cards (4 columns):
 
 **₹12,000+ Crores**
-Processed through our AI lending platform for Axis Bank
+Processed through our AI lending platform for Fintech Bank
 *87% faster loan approvals*
 
 **₹450+ Crores**
@@ -85,7 +85,7 @@ Banking, fintech, and payment systems:
 
 **Technologies:** Node.js, React, PostgreSQL, Redis, AWS
 
-**Case Study:** Axis Bank - ₹12,000+ Cr processed →
+**Case Study:** Fintech Bank - ₹12,000+ Cr processed →
 
 ---
 
@@ -110,8 +110,8 @@ Scalable platforms for high-traffic businesses:
 
 ### Project Showcase (3 cards with images):
 
-#### **Axis Bank: AI-Powered Gold Loan Platform**
-![Axis Bank MIDAS Platform Screenshot]
+#### **Fintech Bank: AI-Powered Gold Loan Platform**
+![Fintech Bank MIDAS Platform Screenshot]
 
 **Challenge:** Manual loan processing took 48 hours, high costs, scaling issues during peak demand.
 
@@ -276,7 +276,7 @@ Enterprise-grade quality at 60-70% lower cost than US/EU agencies. ROI-focused d
 
 > "This platform has redefined how we think about digital lending. The combination of seamless UX, AI-powered decision making, and robust risk management has given us a competitive edge. During Diwali season, when demand spikes 5x, the system handled the load flawlessly. The fraud detection alone has saved us over ₹45 Crores."
 > 
-> **— Head of Branch Banking & Gold Loans, Axis Bank**
+> **— Head of Branch Banking & Gold Loans, Fintech Bank**
 
 ---
 
@@ -372,7 +372,7 @@ India | Serving clients in US, Europe, and beyond
 
 ### Social Proof Column:
 **Trusted By:**
-- Axis Bank (Fortune 500)
+- Fintech Bank (Fortune 500)
 - Cordelia Cruises
 - Fincent (USA)
 - Emcode (UAE)
@@ -398,7 +398,7 @@ Privacy Policy | Terms of Service | Cookie Policy
 **We Turn Complex Business Challenges Into Elegant Software Solutions**
 
 ### Subheadline:
-Trusted by Axis Bank, Cordelia Cruises, and leading fintech companies to build AI-powered systems that scale.
+Trusted by Fintech Bank, Cordelia Cruises, and leading fintech companies to build AI-powered systems that scale.
 
 ### Supporting Text:
 6+ years building enterprise platforms for banking, travel, and SaaS. From concept to deployment, we deliver software that works at scale.
@@ -427,7 +427,7 @@ We're not an outsourcing vendor—we're your engineering team. Direct communicat
 ## CASE STUDY HIGHLIGHTS (Shorter format)
 
 ### **Digital Lending at Scale**
-**Client:** Axis Bank (India's 3rd largest private bank)
+**Client:** Fintech Bank (India's 3rd largest private bank)
 
 Transformed gold loan processing from 48-hour manual process to 30-minute automated system with AI fraud detection.
 
@@ -511,7 +511,7 @@ React • Node.js • Python • TensorFlow • AWS • Kubernetes
 
 ## FEATURED WORK
 
-### Axis Bank: MIDAS Lending Platform
+### Fintech Bank: MIDAS Lending Platform
 **Stack:** React, Node.js, PostgreSQL, Redis, TensorFlow, AWS
 **Scale:** ₹12,000+ Cr processed, 2,000+ branches, 99.7% uptime
 **Challenge:** Build AI-powered gold loan system with RBI compliance
@@ -564,7 +564,7 @@ Building something technically challenging? Let's talk.
 
 ## ANNOUNCEMENT BAR (Optional - Top of page)
 
-🎉 **New:** Read how we helped Axis Bank process ₹12,000+ Crores with AI [Read Case Study →]
+🎉 **New:** Read how we helped Fintech Bank process ₹12,000+ Crores with AI [Read Case Study →]
 
 ---
 
@@ -631,7 +631,7 @@ Yes. We offer post-launch support packages including bug fixes, feature enhancem
 Deep dive into our ensemble ML approach for Fincent's bookkeeping AI
 [Read More →]
 
-**Scaling to 2,000+ Branches: Lessons from Axis Bank MIDAS**
+**Scaling to 2,000+ Branches: Lessons from Fintech Bank MIDAS**
 Architecture decisions that enabled 99.7% uptime at enterprise scale
 [Read More →]
 
@@ -677,7 +677,7 @@ For mobile version:
 
 <!-- Open Graph for social sharing -->
 <meta property="og:title" content="Enterprise Software Development & AI/ML Solutions">
-<meta property="og:description" content="Trusted by Axis Bank, Cordelia Cruises, and leading fintech companies.">
+<meta property="og:description" content="Trusted by Fintech Bank, Cordelia Cruises, and leading fintech companies.">
 <meta property="og:image" content="[URL to professional project screenshot]">
 
 <!-- Keywords for SEO -->
@@ -696,12 +696,12 @@ For mobile version:
 
 **For Specific Campaign Traffic:**
 If coming from "AI/ML expertise" ad → Highlight Fincent case study first
-If coming from "banking software" ad → Highlight Axis Bank first
+If coming from "banking software" ad → Highlight Fintech Bank first
 
 **Geographic Targeting:**
 - US visitors: Show prices in USD, emphasize Fincent case study
 - UAE visitors: Highlight Emcode, emphasize Middle East experience
-- India visitors: Lead with Axis Bank, Cordelia (local brands)
+- India visitors: Lead with Fintech Bank, Cordelia (local brands)
 
 ---
 
@@ -767,7 +767,7 @@ If coming from "banking software" ad → Highlight Axis Bank first
 Test different hero headlines:
 - **A:** "We Build AI-Powered Software That Processes $600M+ in Transactions"
 - **B:** "Enterprise Software Development for Banks, Fintech & High-Growth Companies"
-- **C:** "The Team Behind Axis Bank's AI Lending Platform"
+- **C:** "The Team Behind Fintech Bank's AI Lending Platform"
 
 Test CTA button copy:
 - **A:** "Schedule Free Consultation"
@@ -775,7 +775,7 @@ Test CTA button copy:
 - **C:** "Start Your Project"
 
 Test case study order:
-- **A:** Axis Bank first (enterprise credibility)
+- **A:** Fintech Bank first (enterprise credibility)
 - **B:** Fincent first (US market relevance)
 - **C:** Cordelia first (innovative/unique)
 
@@ -843,7 +843,7 @@ Test case study order:
 **Use VERSION 3** if your primary audience is technical decision-makers (CTOs, VPs of Engineering).
 
 The key is:
-1. **Lead with social proof** (Axis Bank, big numbers)
+1. **Lead with social proof** (Fintech Bank, big numbers)
 2. **Show, don't tell** (metrics > adjectives)
 3. **Clear CTA** (make it easy to contact you)
 4. **Build trust** (real projects, real results)

@@ -6,7 +6,7 @@ A professional website for Oakshire Labs - Enterprise Software Development & AI/
 
 - **Homepage** with hero section, stats, services, case studies, testimonials, FAQ, and CTA
 - **Case Studies** with detailed project pages for:
-  - Axis Bank - AI-Powered Digital Lending Platform
+  - Fintech Bank - AI-Powered Digital Lending Platform
   - Cordelia Cruises - Premium Booking Engine
   - Fincent - AI-Powered Financial SaaS
   - Emcode - Vehicle Tracking & AI Analytics

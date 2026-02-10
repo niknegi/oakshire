@@ -38,7 +38,7 @@ const services = [
     ],
     tech: "Node.js, React, PostgreSQL, Redis, AWS",
     caseStudy: {
-      name: "Axis Bank",
+      name: "Fintech Bank",
       result: "₹12,000+ Cr processed",
       link: "/case-studies/axis-bank",
     },
@@ -85,8 +85,8 @@ export function ServicesSection() {
               className="border-stone-200 hover:border-[#5c6b56]/30 transition-all duration-300 group"
             >
               <CardHeader className="pb-4">
-                <div className="w-12 h-12 rounded-lg bg-[#5c6b56]/10 flex items-center justify-center mb-4 group-hover:bg-[#5c6b56]/20 transition-colors">
-                  <service.icon className="h-6 w-6 text-[#5c6b56]" />
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <service.icon className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-stone-900">
                   {service.title}
@@ -101,7 +101,7 @@ export function ServicesSection() {
                       key={feature}
                       className="text-sm text-stone-600 flex items-start gap-2"
                     >
-                      <span className="text-[#5c6b56] mt-1">•</span>
+                      <span className="text-primary mt-1">•</span>
                       {feature}
                     </li>
                   ))}
@@ -114,7 +114,7 @@ export function ServicesSection() {
                   </p>
                   <Link
                     href={service.caseStudy.link}
-                    className="inline-flex items-center text-sm font-medium text-[#5c6b56] hover:text-[#4a5744] transition-colors"
+                    className="inline-flex items-center text-sm font-medium text-primary hover:text-[#4a5744] transition-colors"
                   >
                     Case Study: {service.caseStudy.name} —{" "}
                     {service.caseStudy.result}

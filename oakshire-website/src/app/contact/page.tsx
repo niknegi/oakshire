@@ -13,7 +13,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-stone-50">
       {/* Hero Header */}
-      <section className="bg-[#5c6b56] text-white py-20">
+      <section className="bg-primary text-white py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-semibold mb-6">
@@ -43,8 +43,8 @@ export default function ContactPage() {
 
               <div className="space-y-6 mb-10">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-[#5c6b56]/10 flex items-center justify-center shrink-0">
-                    <Mail className="h-5 w-5 text-[#5c6b56]" />
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <Mail className="h-5 w-5 text-primary" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-stone-900 mb-1">Email</h3>
@@ -53,8 +53,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-[#5c6b56]/10 flex items-center justify-center shrink-0">
-                    <Phone className="h-5 w-5 text-[#5c6b56]" />
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <Phone className="h-5 w-5 text-primary" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-stone-900 mb-1">Phone</h3>
@@ -64,8 +64,8 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-[#5c6b56]/10 flex items-center justify-center shrink-0">
-                    <MapPin className="h-5 w-5 text-[#5c6b56]" />
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <MapPin className="h-5 w-5 text-primary" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-stone-900 mb-1">
@@ -89,7 +89,7 @@ export default function ContactPage() {
                     href="https://linkedin.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-lg bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-[#5c6b56] hover:text-white transition-colors"
+                    className="w-10 h-10 rounded-lg bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-primary hover:text-white transition-colors"
                   >
                     <Linkedin className="h-5 w-5" />
                   </Link>
@@ -97,7 +97,7 @@ export default function ContactPage() {
                     href="https://github.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-lg bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-[#5c6b56] hover:text-white transition-colors"
+                    className="w-10 h-10 rounded-lg bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-primary hover:text-white transition-colors"
                   >
                     <Github className="h-5 w-5" />
                   </Link>
@@ -105,7 +105,7 @@ export default function ContactPage() {
                     href="https://twitter.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-lg bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-[#5c6b56] hover:text-white transition-colors"
+                    className="w-10 h-10 rounded-lg bg-stone-100 flex items-center justify-center text-stone-600 hover:bg-primary hover:text-white transition-colors"
                   >
                     <Twitter className="h-5 w-5" />
                   </Link>
@@ -216,7 +216,7 @@ export default function ContactPage() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full bg-[#5c6b56] hover:bg-[#4a5744] text-white"
+                    className="w-full bg-primary hover:bg-primaryHover text-white"
                   >
                     Send Message
                     <ArrowRight className="ml-2 h-4 w-4" />

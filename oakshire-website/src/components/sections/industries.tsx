@@ -69,8 +69,8 @@ export function IndustriesSection() {
               className="bg-white p-6 rounded-xl border border-stone-200 hover:border-[#5c6b56]/30 hover:shadow-md transition-all duration-300 group"
             >
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-[#5c6b56]/10 flex items-center justify-center shrink-0 group-hover:bg-[#5c6b56]/20 transition-colors">
-                  <industry.icon className="h-6 w-6 text-[#5c6b56]" />
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                  <industry.icon className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-stone-900 mb-1">

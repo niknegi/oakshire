@@ -84,7 +84,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-stone-50">
       {/* Hero Header */}
-      <section className="bg-[#5c6b56] text-white py-20">
+      <section className="bg-primary text-white py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-semibold mb-6">
@@ -108,8 +108,8 @@ export default function ServicesPage() {
                 className="border-stone-200 h-full"
               >
                 <CardHeader className="pb-4">
-                  <div className="w-12 h-12 rounded-lg bg-[#5c6b56]/10 flex items-center justify-center mb-4">
-                    <service.icon className="h-6 w-6 text-[#5c6b56]" />
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <service.icon className="h-6 w-6 text-primary" />
                   </div>
                   <h2 className="text-xl font-semibold text-stone-900">
                     {service.title}
@@ -124,7 +124,7 @@ export default function ServicesPage() {
                         key={feature}
                         className="text-sm text-stone-600 flex items-start gap-2"
                       >
-                        <span className="text-[#5c6b56] mt-1">•</span>
+                        <span className="text-primary mt-1">•</span>
                         {feature}
                       </li>
                     ))}
@@ -163,8 +163,8 @@ export default function ServicesPage() {
                 className="bg-white p-8 rounded-xl border border-stone-200"
               >
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 rounded-lg bg-[#5c6b56]/10 flex items-center justify-center">
-                    <cap.icon className="h-6 w-6 text-[#5c6b56]" />
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <cap.icon className="h-6 w-6 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold text-stone-900">
                     {cap.title}
@@ -229,7 +229,7 @@ export default function ServicesPage() {
                 },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4">
-                  <div className="w-2 h-2 rounded-full bg-[#5c6b56] mt-2 shrink-0" />
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
                   <div>
                     <h3 className="font-semibold text-stone-900 mb-1">
                       {item.title}
@@ -244,7 +244,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[#5c6b56]">
+      <section className="py-20 bg-primary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-semibold text-white mb-6">
             Ready to start your project?
@@ -256,7 +256,7 @@ export default function ServicesPage() {
           <Button
             asChild
             size="lg"
-            className="bg-white text-[#5c6b56] hover:bg-stone-100 font-medium px-10"
+            className="bg-white text-primary hover:bg-stone-100 font-medium px-10"
           >
             <Link href="/contact">
               Schedule a Consultation

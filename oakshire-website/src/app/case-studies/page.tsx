@@ -6,7 +6,7 @@ import { Card, CardContent } from "~/components/ui/card";
 const caseStudies = [
   {
     slug: "axis-bank",
-    client: "Axis Bank",
+    client: "Fintech Bank",
     title: "AI-Powered Digital Lending Platform",
     subtitle: "Transforming Gold Loan Processing with End-to-End Automation",
     description:
@@ -81,14 +81,14 @@ const caseStudies = [
 export const metadata = {
   title: "Case Studies | Oakshire Labs",
   description:
-    "See how we've helped industry leaders transform their businesses with custom software solutions. Axis Bank, Cordelia Cruises, Fincent, and more.",
+    "See how we've helped industry leaders transform their businesses with custom software solutions. Fintech Bank, Cordelia Cruises, Fincent, and more.",
 };
 
 export default function CaseStudiesPage() {
   return (
     <div className="min-h-screen bg-stone-50">
       {/* Hero Header */}
-      <section className="bg-[#5c6b56] text-white py-20">
+      <section className="bg-primary text-white py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl font-semibold mb-6">
@@ -146,7 +146,7 @@ export default function CaseStudiesPage() {
                             key={impact}
                             className="flex items-start gap-2 text-sm text-stone-700"
                           >
-                            <CheckCircle2 className="h-4 w-4 text-[#5c6b56] mt-0.5 shrink-0" />
+                            <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 shrink-0" />
                             {impact}
                           </li>
                         ))}
@@ -155,7 +155,7 @@ export default function CaseStudiesPage() {
 
                     <Link
                       href={`/case-studies/${caseStudy.slug}`}
-                      className="inline-flex items-center font-medium text-[#5c6b56] hover:text-[#4a5744] transition-colors"
+                      className="inline-flex items-center font-medium text-primary hover:text-[#4a5744] transition-colors"
                     >
                       Read Full Case Study
                       <ArrowRight className="ml-2 h-4 w-4" />
@@ -181,7 +181,7 @@ export default function CaseStudiesPage() {
           <Button
             asChild
             size="lg"
-            className="bg-[#5c6b56] hover:bg-[#4a5744] text-white"
+            className="bg-primary hover:bg-primaryHover text-white"
           >
             <Link href="/contact">
               Schedule a Consultation

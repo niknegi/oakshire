@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 export function CTASection() {
   return (
-    <section className="py-24 bg-[#5c6b56]">
+    <section className="py-24 bg-primary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center text-white">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6">
@@ -21,7 +21,7 @@ export function CTASection() {
             <Button
               asChild
               size="lg"
-              className="bg-white text-[#5c6b56] hover:bg-stone-100 font-medium px-10"
+              className="bg-white text-primary hover:bg-stone-100 font-medium px-10"
             >
               <Link href="/contact">
                 Schedule a Free Consultation

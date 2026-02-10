@@ -80,7 +80,7 @@ export default function EmcodeCaseStudy() {
                   key={stat.label}
                   className="bg-white p-6 rounded-xl border border-stone-200"
                 >
-                  <p className="text-3xl font-bold text-[#5c6b56] mb-2">
+                  <p className="text-3xl font-bold text-primary mb-2">
                     {stat.value}
                   </p>
                   <p className="text-stone-600">{stat.label}</p>
@@ -137,7 +137,7 @@ export default function EmcodeCaseStudy() {
                       key={item}
                       className="flex items-start gap-3 text-stone-700"
                     >
-                      <CheckCircle2 className="h-5 w-5 text-[#5c6b56] mt-0.5 shrink-0" />
+                      <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -211,7 +211,7 @@ export default function EmcodeCaseStudy() {
           <Button
             asChild
             size="lg"
-            className="bg-[#5c6b56] hover:bg-[#4a5744] text-white"
+            className="bg-primary hover:bg-primaryHover text-white"
           >
             <Link href="/contact">Schedule a Consultation</Link>
           </Button>
