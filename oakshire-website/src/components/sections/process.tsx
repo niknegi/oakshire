@@ -19,7 +19,7 @@ const steps = [
   },
   {
     icon: Code,
-    phase: "Week 7-N",
+    phase: "Week 7+",
     title: "Agile Development",
     description:
       "2-week sprints with demos. Continuous integration and testing. Regular communication via Slack and video calls.",
@@ -51,9 +51,9 @@ export function ProcessSection() {
           {steps.map((step, index) => (
             <div key={step.title} className="relative">
               {/* Connector Line */}
-              {index < steps.length - 1 && (
+              {/* {index < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-12 left-[60%] w-[80%] h-[2px] bg-stone-200" />
-              )}
+              )} */}
 
               <div className="bg-stone-50 rounded-xl p-6 border border-stone-100 h-full">
                 {/* Icon & Phase */}

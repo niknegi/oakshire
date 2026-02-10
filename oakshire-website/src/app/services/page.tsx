@@ -1,7 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Brain, Landmark, Globe, Code2, Server, Database, Cloud } from "lucide-react";
 import { Button } from "~/components/ui/button";
 import { Card, CardContent, CardHeader } from "~/components/ui/card";
+import config from "next.config.js";
 
 const mainServices = [
   {
@@ -84,13 +86,21 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-stone-50">
       {/* Hero Header */}
-      <section className="bg-primary text-white py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-primary text-white py-20">
+        {/* Image Background */}
+        <Image
+          src={`${config.assetPrefix}assets/images/hero-2.jpg`}
+          alt="Services background"
+          fill
+          className="absolute inset-0 w-full h-full object-cover"
+          priority
+        />
+        <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl font-semibold mb-6">
+            <h1 className="text-4xl text-white sm:text-5xl font-semibold mb-6 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
               What We Build
             </h1>
-            <p className="text-xl text-stone-200">
+            <p className="text-xl text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
               Enterprise-grade software engineered for scale, security, and
               measurable impact.
             </p>
@@ -244,12 +254,18 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-primary">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-semibold text-white mb-6">
+      <section className="relative py-20 bg-primary">
+        <Image
+          src={`${config.assetPrefix}assets/images/start.jpg`}
+          alt="Get Started background"
+          fill
+          className="object-cover z-9"
+        />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center z-10 relative">
+          <h2 className="text-3xl font-semibold text-white mb-6 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
             Ready to start your project?
           </h2>
-          <p className="text-xl text-stone-200 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-white mb-10 max-w-2xl mx-auto drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
             Let's discuss how we can help you build scalable, secure, and
             high-performance software solutions.
           </p>
