@@ -33,11 +33,13 @@ jobs:
         with:
           static_site_generator: next
 
-      - name: Install dependencies
+      - name: Fix package-lock and install
         working-directory: ./oakshire-website
         run: |
-          # Clean install, ignore optional platform issues
-          npm ci --no-optional || npm install
+          # Remove lock file and node_modules to ensure fresh install
+          rm -rf node_modules package-lock.json
+          # Install dependencies fresh
+          npm install
 
       - name: Build with Next.js
         working-directory: ./oakshire-website
@@ -45,6 +47,9 @@ jobs:
         env:
           # Skip env validation for static build (no runtime DB needed for static site)
           SKIP_ENV_VALIDATION: "true"
+          NEXT_TELEMETRY_DISABLED: "1"
+          # Force SWC to use WASM fallback instead of native binary
+          NEXT_SKIP_NATIVE_SWC: "1"
 
       - name: List dist contents
         working-directory: ./oakshire-website
