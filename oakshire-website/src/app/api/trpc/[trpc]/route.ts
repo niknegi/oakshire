@@ -1,3 +1,10 @@
+export const dynamic = "force-static";
+
+// Generate static params for build (required for static export)
+export function generateStaticParams() {
+  return [{ trpc: "dummy" }];
+}
+
 import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
 import { type NextRequest } from "next/server";
 
