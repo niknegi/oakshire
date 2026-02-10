@@ -8,6 +8,9 @@ import "./src/env.js";
 const config = {
   output: "export",
   distDir: "dist",
+  // GitHub Pages serves from subdirectory /repo-name/
+  basePath: "/oakshire",
+  assetPrefix: "/oakshire/",
   images: {
     unoptimized: true,
   },
